@@ -12,6 +12,7 @@ class Post
   end
 
   def author_name
+<<<<<<< HEAD
     if @author == nil
       return nil
     else
@@ -27,6 +28,15 @@ class Post
   #   end
   # end
 
+=======
+    if self.author
+      self.author.name
+    else
+      "Author not found!"
+    end
+  end
+
+>>>>>>> 2015cf8666cfe89ca0ef87fc7fa0041b5ed2ea82
   def self.all
     @@all
   end

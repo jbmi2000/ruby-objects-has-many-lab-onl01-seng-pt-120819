@@ -37,6 +37,7 @@ class Artist
   end
 
   def songs
+<<<<<<< HEAD
     Song.all.select do |song|
       song.artist == self
     end
@@ -46,5 +47,12 @@ class Artist
   def self.song_count
     # @@song_count
     Song.all.count
+=======
+    @songs
+  end
+
+  def self.song_count
+    @@song_count
+>>>>>>> 2015cf8666cfe89ca0ef87fc7fa0041b5ed2ea82
   end
 end
